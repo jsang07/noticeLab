@@ -1,0 +1,200 @@
+[
+  {
+    "id": "M01",
+    "name": "김민지",
+    "department": "Product",
+    "positionTitle": "프로덕트 매니저",
+    "employmentType": "FULL_TIME",
+    "employmentStatus": "ACTIVE",
+    "hireDate": "2025-08-18",
+    "contractEndDate": null,
+    "managerialLevel": "IC"
+  },
+  {
+    "id": "M02",
+    "name": "박준호",
+    "department": "Design",
+    "positionTitle": "팀장",
+    "employmentType": "FULL_TIME",
+    "employmentStatus": "ACTIVE",
+    "hireDate": "2024-02-01",
+    "contractEndDate": null,
+    "managerialLevel": "TEAM_LEAD"
+  },
+  {
+    "id": "M03",
+    "name": "이서연",
+    "department": "Platform",
+    "positionTitle": "개발자",
+    "employmentType": "FULL_TIME",
+    "employmentStatus": "ACTIVE",
+    "hireDate": "2026-03-31",
+    "contractEndDate": null,
+    "managerialLevel": "IC"
+  },
+  {
+    "id": "M04",
+    "name": "최현우",
+    "department": "Growth",
+    "positionTitle": "마케터",
+    "employmentType": "FULL_TIME",
+    "employmentStatus": "ACTIVE",
+    "hireDate": "2026-04-01",
+    "contractEndDate": null,
+    "managerialLevel": "IC"
+  },
+  {
+    "id": "M05",
+    "name": "정하늘",
+    "department": "Finance",
+    "positionTitle": "회계 담당",
+    "employmentType": "FULL_TIME",
+    "employmentStatus": "ON_LEAVE",
+    "hireDate": "2025-11-03",
+    "contractEndDate": null,
+    "managerialLevel": "IC"
+  },
+  {
+    "id": "M06",
+    "name": "오지훈",
+    "department": "Sales",
+    "positionTitle": "세일즈 매니저",
+    "employmentType": "CONTRACT",
+    "employmentStatus": "ACTIVE",
+    "hireDate": "2025-12-01",
+    "contractEndDate": "2026-07-09",
+    "managerialLevel": "IC"
+  },
+  {
+    "id": "M07",
+    "name": "한유진",
+    "department": "Content",
+    "positionTitle": "콘텐츠 에디터",
+    "employmentType": "CONTRACT",
+    "employmentStatus": "ACTIVE",
+    "hireDate": "2025-12-15",
+    "contractEndDate": "2026-07-05",
+    "managerialLevel": "IC"
+  },
+  {
+    "id": "M08",
+    "name": "임도윤",
+    "department": "Data",
+    "positionTitle": "데이터 분석가",
+    "employmentType": "CONTRACT",
+    "employmentStatus": "ACTIVE",
+    "hireDate": "2026-02-20",
+    "contractEndDate": "2026-07-01",
+    "managerialLevel": "IC"
+  },
+  {
+    "id": "M09",
+    "name": "송아린",
+    "department": "Product",
+    "positionTitle": "팀장",
+    "employmentType": "CONTRACT",
+    "employmentStatus": "ACTIVE",
+    "hireDate": "2025-06-01",
+    "contractEndDate": "2026-06-30",
+    "managerialLevel": "TEAM_LEAD"
+  },
+  {
+    "id": "M10",
+    "name": "배시우",
+    "department": "Operations",
+    "positionTitle": "팀장",
+    "employmentType": "FULL_TIME",
+    "employmentStatus": "ON_LEAVE",
+    "hireDate": "2025-03-10",
+    "contractEndDate": null,
+    "managerialLevel": "TEAM_LEAD"
+  },
+  {
+    "id": "M11",
+    "name": "강채원",
+    "department": "HR",
+    "positionTitle": "부서장",
+    "employmentType": "FULL_TIME",
+    "employmentStatus": "ACTIVE",
+    "hireDate": "2023-05-01",
+    "contractEndDate": null,
+    "managerialLevel": "DEPARTMENT_HEAD"
+  },
+  {
+    "id": "M12",
+    "name": "문태윤",
+    "department": "Security",
+    "positionTitle": "인턴",
+    "employmentType": "INTERN",
+    "employmentStatus": "ACTIVE",
+    "hireDate": "2026-01-05",
+    "contractEndDate": null,
+    "managerialLevel": "IC"
+  },
+  {
+    "id": "M13",
+    "name": "윤서진",
+    "department": "Marketing",
+    "positionTitle": "마케팅 어시스턴트",
+    "employmentType": "PART_TIME",
+    "employmentStatus": "ACTIVE",
+    "hireDate": "2025-09-01",
+    "contractEndDate": null,
+    "managerialLevel": "IC"
+  },
+  {
+    "id": "M14",
+    "name": "장도현",
+    "department": "Platform",
+    "positionTitle": "개발자",
+    "employmentType": "CONTRACT",
+    "employmentStatus": "ACTIVE",
+    "hireDate": "2026-04-01",
+    "contractEndDate": "2026-12-31",
+    "managerialLevel": "IC"
+  },
+  {
+    "id": "M15",
+    "name": "신예은",
+    "department": "Legal",
+    "positionTitle": "법무 담당",
+    "employmentType": "FULL_TIME",
+    "employmentStatus": "ACTIVE",
+    "hireDate": "2026-03-01",
+    "contractEndDate": null,
+    "managerialLevel": "IC"
+  },
+  {
+    "id": "M16",
+    "name": "조우진",
+    "department": "Product",
+    "positionTitle": "팀장",
+    "employmentType": "FULL_TIME",
+    "employmentStatus": "ACTIVE",
+    "hireDate": "2026-03-31",
+    "contractEndDate": null,
+    "managerialLevel": "TEAM_LEAD"
+  },
+  {
+    "id": "M17",
+    "name": "남수아",
+    "department": "Customer Success",
+    "positionTitle": "CS 매니저",
+    "employmentType": "CONTRACT",
+    "employmentStatus": "ACTIVE",
+    "hireDate": "2025-10-20",
+    "contractEndDate": "2026-07-10",
+    "managerialLevel": "IC"
+  },
+  {
+    "id": "M18",
+    "name": "권민석",
+    "department": "Engineering",
+    "positionTitle": "개발자",
+    "employmentType": "FULL_TIME",
+    "employmentStatus": "ACTIVE",
+    "hireDate": "2025-01-15",
+    "contractEndDate": null,
+    "managerialLevel": "IC"
+  }
+]

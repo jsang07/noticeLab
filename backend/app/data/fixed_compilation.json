@@ -1,0 +1,143 @@
+{
+  "version": "1.0",
+  "title": "2026년 상반기 직무역량 교육비 지원 안내",
+  "timezone": "Asia/Seoul",
+  "anchors": [
+    {
+      "id": "notice-date",
+      "type": "DATE",
+      "value": "2026-04-01"
+    },
+    {
+      "id": "application-deadline",
+      "type": "DATETIME",
+      "value": "2026-04-10T18:00:00+09:00"
+    }
+  ],
+  "baselineEligibility": {
+    "kind": "all",
+    "children": [
+      {
+        "kind": "condition",
+        "id": "hire-date",
+        "field": "hireDate",
+        "operator": "LTE",
+        "value": {
+          "kind": "literal",
+          "type": "date",
+          "value": "2026-03-31"
+        },
+        "sourceText": "2026년 3월 31일까지 입사한",
+        "confidence": "HIGH",
+        "requiresConfirmation": false
+      },
+      {
+        "kind": "condition",
+        "id": "leave-exclusion",
+        "field": "employmentStatus",
+        "operator": "NEQ",
+        "value": {
+          "kind": "literal",
+          "type": "string",
+          "value": "ON_LEAVE"
+        },
+        "sourceText": "현재 휴직 중인 구성원은 신청 대상에서 제외합니다.",
+        "confidence": "HIGH",
+        "requiresConfirmation": false
+      },
+      {
+        "kind": "any",
+        "children": [
+          {
+            "kind": "condition",
+            "id": "full-time",
+            "field": "employmentType",
+            "operator": "EQ",
+            "value": {
+              "kind": "literal",
+              "type": "string",
+              "value": "FULL_TIME"
+            },
+            "sourceText": "정규직",
+            "confidence": "HIGH",
+            "requiresConfirmation": false
+          },
+          {
+            "kind": "all",
+            "children": [
+              {
+                "kind": "condition",
+                "id": "contract-type",
+                "field": "employmentType",
+                "operator": "EQ",
+                "value": {
+                  "kind": "literal",
+                  "type": "string",
+                  "value": "CONTRACT"
+                },
+                "sourceText": "계약직",
+                "confidence": "HIGH",
+                "requiresConfirmation": false
+              },
+              {
+                "kind": "condition",
+                "id": "contract-duration",
+                "field": "contractEndDate",
+                "operator": "GTE",
+                "value": {
+                  "kind": "relative_date",
+                  "base": {
+                    "kind": "anchor_reference",
+                    "anchorId": "application-deadline"
+                  },
+                  "offset": {
+                    "months": 3,
+                    "days": 0
+                  }
+                },
+                "sourceText": "계약직은 신청 마감일인 2026년 4월 10일을 기준으로 계약 종료일까지 3개월 이상 남아 있어야 합니다.",
+                "confidence": "HIGH",
+                "requiresConfirmation": false
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "exceptions": [],
+  "actions": [
+    {
+      "id": "apply",
+      "description": "지원 대상자는 교육 과정명, 교육 기간, 교육비를 작성하여 신청",
+      "when": null,
+      "deadlineAnchorId": "application-deadline",
+      "sourceText": "교육 과정명, 교육 기간, 교육비를 작성하여 4월 10일 오후 6시까지 신청해 주세요."
+    },
+    {
+      "id": "leadership",
+      "description": "지원 대상인 팀장 이상은 리더십 심화과정 선택 가능",
+      "when": {
+        "kind": "condition",
+        "id": "leadership-level",
+        "field": "managerialLevel",
+        "operator": "IN",
+        "value": {
+          "kind": "literal",
+          "type": "string_array",
+          "value": [
+            "TEAM_LEAD",
+            "DEPARTMENT_HEAD",
+            "EXECUTIVE"
+          ]
+        },
+        "sourceText": "팀장 이상",
+        "confidence": "HIGH",
+        "requiresConfirmation": false
+      },
+      "deadlineAnchorId": null,
+      "sourceText": "리더십 심화과정을 선택할 수 있습니다."
+    }
+  ],
+  "uncertainties": []
+}
